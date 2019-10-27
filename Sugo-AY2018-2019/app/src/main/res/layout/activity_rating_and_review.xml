@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chosen"
+    tools:context=".RatingAndReviewActivity">
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/imageView2"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="194dp" />
+    <EditText
+        android:id="@+id/review_text"
+        android:layout_width="325dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/la_bg"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="How good was your tasker? (Optional)"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="1"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        app:fontFamily="@font/montserrat"/>
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="Submit"
+        android:textColor="@color/white"
+        app:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:id="@+id/ratingScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Rate your Tasker!"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingScale"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</RelativeLayout>

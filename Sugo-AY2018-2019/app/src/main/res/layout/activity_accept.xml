@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chosen"
+    tools:context=".AcceptActivity">
+
+    <TextView
+        android:id="@+id/task_state"
+        android:layout_width="166dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TASK STATE"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/accept_date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Date needed:"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="10sp"
+        android:layout_below="@+id/dummyViewAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/dummyViewDate"
+        app:fontFamily="@font/montserrat_bold"/>
+
+        <TextView
+            android:id="@+id/accept_start2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Starting Amount:"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="10sp"
+            android:layout_below="@+id/dummyViewDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/dummyViewDesc"
+            app:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:id="@+id/accept_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dummyViewState"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10sp"
+        android:layout_toRightOf="@+id/dummyViewTitle"
+        android:text="Task Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/dummyViewState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/task_state"/>
+        <TextView
+            android:id="@+id/dummyViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dummyViewState"/>
+        <TextView
+            android:id="@+id/dummyViewDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dummyViewTitle"/>
+        <TextView
+            android:id="@+id/dummyViewAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dummyViewDesc"/>
+        <TextView
+            android:id="@+id/dummyViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dummyViewAmount"/>
+        <TextView
+            android:id="@+id/dummyViewBid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dummyViewDate"/>
+        <TextView
+            android:id="@+id/dummyViewBidder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dummyViewBid"/>
+        <TextView
+            android:id="@+id/accept_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Type:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginEnd="10sp"
+            android:layout_below="@+id/dummyViewState"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/dummyViewTitle"
+            app:fontFamily="@font/montserrat_bold"/>
+
+        <TextView
+            android:id="@+id/accept_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Date needed"
+            android:layout_marginStart="10sp"
+            android:layout_below="@+id/dummyViewAmount"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/dummyViewDate"
+            android:textColor="#FFFFFF"
+            app:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/accept_start"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:text="Starting Amount"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10sp"
+            android:layout_below="@+id/dummyViewDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/dummyViewDesc"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/accept_desc"
+            android:layout_width="155dp"
+            android:layout_height="57dp"
+            android:text="Description"
+            android:textColor="#FFFFFF"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="1"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="10sp"
+            android:layout_below="@+id/dummyViewTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/dummyViewDesc"
+            app:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/accept_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="10sp"
+            android:layout_below="@+id/dummyViewTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/dummyViewDesc"
+            app:fontFamily="@font/montserrat_bold"/>
+
+
+    <TextView
+        android:id="@+id/accept_curr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dummyViewDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="15sp"
+        android:layout_toRightOf="@+id/dummyViewBid"
+        android:text="Current Bid"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/accept_curr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Bid:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="10sp"
+            android:layout_below="@+id/dummyViewDate"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/dummyViewDate"
+            app:fontFamily="@font/montserrat_bold"/>
+
+        <TextView
+            android:id="@+id/accept_bidder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Current Bidder"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="10sp"
+            android:layout_below="@+id/dummyViewBid"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/dummyViewBidder"
+            app:fontFamily="@font/montserrat"
+            />
+
+        <TextView
+            android:id="@+id/accept_bidder3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Tasker:"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="10sp"
+            android:layout_below="@+id/dummyViewBid"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/dummyViewBidder"
+            app:fontFamily="@font/montserrat_bold"/>
+
+
+    <Button
+        android:id="@+id/accept_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_bg"
+        android:text="Accept Bid"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/accept_bidder3"
+        app:fontFamily="@font/montserrat_bold"
+        />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_bg"
+        android:text="Cancel Task"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/accept_btn"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:fontFamily="@font/montserrat_bold"
+        />
+
+
+</RelativeLayout>

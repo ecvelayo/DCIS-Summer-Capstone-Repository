@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_number": "615203631110",
+    "firebase_url": "https://sugo-application.firebaseio.com",
+    "project_id": "sugo-application",
+    "storage_bucket": "sugo-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615203631110:android:c84bc832499d001a",
+        "android_client_info": {
+          "package_name": "com.example.sugoapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615203631110-t9q3okd6a1ela7lvdsjmnc9gt0lbuu3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sugoapplication",
+            "certificate_hash": "8a853b8ee3d544b49f29097afd33aadc186e232f"
+          }
+        },
+        {
+          "client_id": "615203631110-fl611tmgmqfh1l9i905mobr4hcdbblrc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sugoapplication",
+            "certificate_hash": "05ebe6070b14dc6e85773b53c66d64d8953c3547"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQekqtIWl4XXeIOfLwCfrEzDLaPeamjuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615203631110-s9tuh8kl8q2gbboefftjg5hgfhhv675j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chosen"
+    tools:context=".CompletionTaskeeActivity">
+
+    <TextView
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:text="Tasker Info:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dummyViewT3"
+        android:text="Payment Amount"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/bayad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/dummyViewT3"
+        android:text="Amount to be Paid"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/tasker_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tasker_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dummyViewT1"
+        android:text="Tasker Number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/contactno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tasker_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/dummyViewT1"
+        android:text="Contact No.:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasker_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dummyViewT2"
+        android:text="Task Name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/NameTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasker_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/dummyViewT2"
+        android:text="Name of Task"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/tasker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tasker_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="Tasker Name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <Button
+        android:id="@+id/complete_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_bg"
+        android:text="Complete"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/payment"
+        app:fontFamily="@font/montserrat_bold"/>
+
+    <ImageView
+        android:id="@+id/tasker_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="10dp"
+        tools:srcCompat="@tools:sample/avatars[2]"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/dummyViewT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tasker_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/dummyViewT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dummyViewT1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/dummyViewT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dummyViewT2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

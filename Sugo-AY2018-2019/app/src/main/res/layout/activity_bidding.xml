@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chosen"
+    tools:context=".BiddingActivity">
+
+    <TextView
+        android:id="@+id/bidView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="Task Title"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/bid_taskee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bidView_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Taskee"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/bid_dateNeeded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dummyViewBiddingAm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dummyViewBiddingDate"
+        android:text="Date needed"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/bid_dateNeeded2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dummyViewBiddingAm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/dummyViewBiddingDate"
+        android:text="Date needed:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/bid_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bidView_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dummyViewBiddingAm"
+        android:text="Starting Amount"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/bid_start2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bidView_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/dummyViewBiddingAm"
+        android:text="Starting Amount:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat_bold" />/>
+
+    <TextView
+        android:id="@+id/bidView_desc"
+        android:layout_width="201dp"
+        android:layout_height="87dp"
+        android:layout_below="@id/bid_taskee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="1"
+        android:text="Description"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/dummyViewBiddingAm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/bidView_desc"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/dummyViewBiddingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/dummyViewBiddingAm"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bid_btn"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_bg"
+        android:text="Bid"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bidAmount"
+        app:fontFamily="@font/montserrat_bold"/>
+
+    <EditText
+        android:id="@+id/bidAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Enter Bid Amount"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bidding_list"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/bidding_list"
+        android:background="@drawable/customshape"
+        android:layout_width="330dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:layout_below="@id/dummyViewBiddingDate"/>
+
+</RelativeLayout>

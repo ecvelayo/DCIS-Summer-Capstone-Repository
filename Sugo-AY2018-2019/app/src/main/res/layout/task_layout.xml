@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    android:padding="10dp"
+    android:background="@drawable/layerlist">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Task Type"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/taskee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_below="@id/title"
+        android:text="Taskee"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@id/textView"
+        android:layout_toLeftOf="@+id/dummyViewGAP"
+        android:text="Starting Amount"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/date_needed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:layout_toRightOf="@id/textView7"
+        android:text="Date Needed"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/state_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toRightOf="@id/textView5"
+        android:layout_toLeftOf="@+id/dummyViewGAP2"
+        android:text="Task State"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/latest_bid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/textView6"
+        android:text="Latest bid amount"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:fontFamily="@font/montserrat" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="108dp"
+        android:text="Starting:"
+        android:textColor="#000000"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="State:"
+        android:textColor="#000000"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="108dp"
+        android:layout_toRightOf="@+id/dummyViewGAP"
+        android:text="Latest Bid:"
+        android:textColor="#000000"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="136dp"
+        android:layout_toRightOf="@id/dummyViewGAP2"
+        android:text="Date Req:"
+        android:textColor="#000000"
+        app:fontFamily="@font/montserrat_bold" />
+    <TextView
+        android:id="@+id/dummyViewGAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/taskee"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/dummyViewGAP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_below="@id/taskee"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

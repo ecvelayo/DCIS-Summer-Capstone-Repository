@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chosen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/sugo_profile2" />
+
+        <RatingBar
+            android:id="@+id/profile_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:isIndicator="true"
+            android:layout_gravity="center_horizontal"
+             />
+
+        <TextView
+            android:id="@+id/verify"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Verified"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:fontFamily="@font/montserrat"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintTop_toTopOf="@+id/guideline19"
+            app:layout_constraintVertical_bias="0.338" />
+
+
+        <TextView
+            android:id="@+id/id_number"
+            android:layout_width="240dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Id Number"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            app:fontFamily="@font/montserrat" />
+
+
+        <TextView
+            android:id="@+id/first_name"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="First Name"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:fontFamily="@font/montserrat"
+            />
+
+        <TextView
+            android:id="@+id/last_name"
+            android:layout_width="240dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Last Name"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="240dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Phone Number"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            app:fontFamily="@font/montserrat"
+             />
+
+    <TextView
+        android:id="@+id/course"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Course"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/montserrat"
+         />
+
+        <TextView
+            android:id="@+id/skills"
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Skills"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:fontFamily="@font/montserrat"
+             />
+
+        <ListView
+            android:id="@+id/reviews"
+            android:background="@drawable/customshape"
+            android:layout_width="392dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:focusableInTouchMode="false"
+            android:listSelector="@android:color/transparent"
+            />
+
+    <Button
+        android:id="@+id/save_profile"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_bg"
+        android:onClick="onClick"
+        android:text="Save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/guideline19"
+        app:layout_constraintVertical_bias="0.924" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

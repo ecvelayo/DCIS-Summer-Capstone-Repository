@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SuGo!</string>
+    <string name="title_activity_sidebar" color="blue">SuGo!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="Types">
+        <!--<item>Please Choose Type of Task</item>-->
+        <item>Odd jobs</item>
+        <item>Tutorial</item>
+        <item>School stuff</item>
+    </string-array>
+</resources>

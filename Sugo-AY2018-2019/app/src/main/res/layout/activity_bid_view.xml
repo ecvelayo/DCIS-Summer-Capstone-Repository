@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chosen"
+    tools:context=".BidView">
+
+    <TextView
+        android:id="@+id/bidView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="Task Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/bidView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date needed"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10sp"
+        android:layout_toRightOf="@id/dummyViewbidvdate"
+        android:layout_below="@id/dummyViewbidvamount"
+        app:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/bidView_date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Needed:"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10sp"
+        android:layout_toLeftOf="@id/dummyViewbidvdate"
+        android:layout_below="@id/dummyViewbidvamount"
+        app:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:id="@+id/bidView_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starting Amount"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10sp"
+        android:layout_toRightOf="@id/dummyViewbidvstate"
+        android:layout_below="@id/dummyViewbidvstate"
+        app:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/bidView_start2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starting Amount:"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10sp"
+        android:layout_toLeftOf="@id/dummyViewbidvamount"
+        android:layout_below="@id/dummyViewbidvstate"
+        app:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:id="@+id/bidView_desc"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:text="Description"
+        android:textColor="#FFFFFF"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:minLines="1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10sp"
+        android:layout_toRightOf="@id/dummyViewbidvdate"
+        android:layout_below="@id/dummyViewbidvdate"
+        app:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/bidView_desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10sp"
+        android:layout_toLeftOf="@id/dummyViewbidvdesc"
+        android:layout_below="@id/dummyViewbidvdate"
+        app:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:id="@+id/current_bidView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Current Bid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10sp"
+        android:layout_toRightOf="@id/dummyViewbidvbid"
+        android:layout_below="@id/dummyViewbidvdesc"
+        app:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/current_bidView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Bid:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10sp"
+        android:layout_toLeftOf="@id/dummyViewbidvbid"
+        android:layout_below="@id/dummyViewbidvdesc"
+        app:fontFamily="@font/montserrat_bold"/>
+
+    <TextView
+        android:id="@+id/bidView_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task State"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10sp"
+        android:layout_toRightOf="@id/dummyViewbidvstate"
+        android:layout_below="@id/bidView_title"
+        app:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/bidView_state2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task State:"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10sp"
+        android:layout_toLeftOf="@id/dummyViewbidvstate"
+        android:layout_below="@id/bidView_title"
+        app:fontFamily="@font/montserrat_bold"/>
+    <TextView
+        android:id="@+id/dummyViewbidvstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/bidView_title"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/dummyViewbidvamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dummyViewbidvstate"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/dummyViewbidvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dummyViewbidvamount"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/dummyViewbidvdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dummyViewbidvdate"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/dummyViewbidvbid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/dummyViewbidvdesc"
+        android:layout_centerHorizontal="true" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
